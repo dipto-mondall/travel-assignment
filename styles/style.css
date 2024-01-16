@@ -36,6 +36,9 @@ header {
   align-items: center;
   gap: 20px;
 }
+.hamburger_icon {
+  display: none;
+}
 .nav .nav-menu .nav-menu-items {
   color: #424247;
   font-size: 18px;
@@ -84,9 +87,9 @@ header {
   margin: 48px auto 0;
 }
 .banner-form {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
 }
 .banner-input {
   padding: 16px 15px;
@@ -110,31 +113,46 @@ header {
 
 /* mobile responsive */
 @media screen and (max-width: 576px) {
-    .main-container{
-        padding: 20px;
-    }
-  .nav {
-    flex-direction: column;
+  .main-container {
+    padding: 20px;
+  }
+  /* .nav {
+    display: none;
+  } */
+  .nav .nav-heading {
+    color: #131318;
+    font-size: 22px;
+    font-weight: 800;
+  }
+  .nav .nav-title {
+    gap: 10px;
+  }
+  .hamburger_icon {
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .nav .nav-menu .nav-menu-items {
+    display: none;
   }
   .banner-title {
     font-size: 30px;
     margin-bottom: 16px;
   }
   .banner-form {
-flex-direction: column;
+    flex-direction: column;
+  }
 }
-}
-
 
 /* tablet */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .main-container{
-        padding: 30px;
-    }
-    .banner-form {
-        flex-direction: column;
-        }
-        .nav {
-            flex-direction: column;
-          }
+  .main-container {
+    padding: 30px;
+  }
+  .banner-form {
+    flex-direction: column;
+  }
+  .nav {
+    flex-direction: column;
+  }
 }
