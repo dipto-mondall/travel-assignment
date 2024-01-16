@@ -139,6 +139,9 @@ header {
     font-size: 30px;
     margin-bottom: 16px;
   }
+  .banner-description {
+    padding: 5px;
+  }
   .banner-form {
     flex-direction: column;
   }
