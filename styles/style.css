@@ -243,14 +243,16 @@ header {
   max-width: 643px;
   margin: 24px auto 48px;
 }
-.why-card-title {
+.why-card-title,
+.newslatter-title {
   color: #131318;
   font-size: 24px;
   font-weight: 800;
   margin-top: 32px;
   margin-bottom: 16px;
 }
-.why-card-description {
+.why-card-description,
+.newslatter-description {
   color: #5a5a5d;
   font-size: 16px;
   font-weight: 400;
@@ -281,7 +283,69 @@ header {
   margin: 0 auto;
   margin-top: 24px;
 }
+/* newslatter-section */
 
+#newslatter-section {
+  display: flex;
+  justify-content: space-between;
+}
+.newslatter-content {
+  width: 40%;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+  padding: 40px;
+}
+
+.newslatter-img {
+  width: 58%;
+  position: relative;
+}
+.newslatter-img > img {
+  width: 100%;
+}
+#newslatter-section hr {
+  /* width: 80%; */
+  margin: 24px auto;
+}
+.newslatter-form .newslatter-input {
+  display: block;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  outline: 0;
+  border: 0;
+  width: 100%;
+  margin-bottom: 16px;
+  color: rgba(19, 19, 24, 0.3);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 16px;
+}
+.newslatter-input-btn {
+  width: 100% !important;
+  background: #ff5400;
+  color: #fff;
+  border-radius: 8px;
+  border: 0;
+  padding: 16px;
+}
+.newslatter-img-text {
+  border-radius: 16px;
+  background: #ff5400;
+  padding: 10px 16px;
+  color: #fff;
+  position: absolute;
+  right: 2%;
+  top: 65%;
+  transform: rotate(-19.628deg);
+}
+.newslatter-img-text-2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+.newslatter-img-text-1 {
+  font-size: 20px;
+  font-weight: 400;
+}
 /* mobile responsive */
 @media screen and (max-width: 576px) {
   .main-container {
@@ -364,6 +428,26 @@ header {
   .why-card-description {
     font-size: 14px;
   }
+  #newslatter-section {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .newslatter-content {
+    width: 100%;
+  }
+  .newslatter-img {
+    width: 100%;
+  }
+
+  .newslatter-img-text {
+    padding: 5px;
+  }
+  .newslatter-img-text-2 {
+    font-size: 18px;
+  }
+  .newslatter-img-text-1 {
+    font-size: 14px;
+  }
 }
 
 /* tablet */
@@ -384,5 +468,20 @@ header {
   .card-3-center {
     width: 100%;
     text-align: center;
+  }
+  #newslatter-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .newslatter-img-text {
+    padding: 5px;
+  }
+  .newslatter-img-text-2 {
+    font-size: 18px;
+  }
+  .newslatter-img-text-1 {
+    font-size: 14px;
   }
 }
