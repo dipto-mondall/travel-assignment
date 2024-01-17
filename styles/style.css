@@ -163,6 +163,28 @@ header {
 }
 
 /* choose-section */
+.choose-img-collapse-2{
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  
+}
+.chooose-img6 {
+ position: relative;
+ flex-shrink: 1;
+}
+.chooose-img7 {
+ position: relative;
+ flex-shrink: 2;
+}
+.choose-img-collapse {
+  display: grid;
+  gap: 24px;
+  grid-template-areas:
+    "a a b b"
+    "c d d e"
+    ;
+}
 
 .chooose-img1 {
   grid-area: a;
@@ -184,14 +206,7 @@ header {
   grid-area: e;
   position: relative;
 }
-.chooose-img6 {
-  grid-area: f;
-  position: relative;
-}
-.chooose-img7 {
-  grid-area: g;
-  position: relative;
-}
+
 .chooose-img1 > img,
 .chooose-img2 > img,
 .chooose-img3 > img,
@@ -224,14 +239,6 @@ header {
 .choose-description {
   margin: 0 auto;
   max-width: 643px;
-}
-.choose-img-collapse {
-  display: grid;
-  gap: 24px;
-  grid-template-areas:
-    "a a b b"
-    "c d d e"
-    "f f g  g";
 }
 
 /* why section */
@@ -424,7 +431,7 @@ footer {
     font-size: 20px;
   }
   section {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
   .nav .nav-heading {
     color: #131318;
@@ -461,6 +468,15 @@ footer {
   .our-section-img {
     margin-top: 24px;
   }
+  .choose-img-collapse-2{
+    flex-direction: column;
+  }
+  .chooose-img6 {
+    flex-shrink: 1;
+   }
+   .chooose-img7 {
+    flex-shrink: 1;
+   }
   .choose-img-collapse {
     gap: 24px;
     grid-template-areas:
@@ -469,8 +485,7 @@ footer {
       "c"
       "d"
       "e"
-      "f"
-      "g";
+      ;
   }
   .chooose-img1 > img,
   .chooose-img2 > img,
@@ -557,6 +572,25 @@ footer {
     width: 100%;
     text-align: center;
   }
+  .choose-img-collapse-2{
+    flex-direction: column;
+  }
+  .chooose-img6 {
+    flex-shrink: 1;
+   }
+   .chooose-img7 {
+    flex-shrink: 1;
+   }
+  .choose-img-collapse {
+    gap: 24px;
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      ;
+  }
   #newslatter-section {
     flex-direction: column;
     justify-content: center;
@@ -572,7 +606,4 @@ footer {
   .newslatter-img-text-1 {
     font-size: 14px;
   }
-  section {
-    margin-bottom: 50px;
-}
 }
