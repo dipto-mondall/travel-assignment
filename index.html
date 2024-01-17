@@ -14,8 +14,8 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body class="main-container">
-    <header>
+  <body>
+    <header class="main-container">
       <!-- nav -->
       <nav class="nav">
         <div class="nav-title">
@@ -38,7 +38,7 @@
     </header>
 
     <!-- banner -->
-    <div id="banner">
+    <div class="main-container" id="banner">
       <div class="banner-content">
         <h2 class="banner-title">Explore Your Travel</h2>
         <p class="banner-description">
@@ -85,7 +85,7 @@
     </div>
 
     <!-- main -->
-    <main>
+    <main class="main-container">
       <!-- our section -->
       <section id="our-section">
         <div class="our-section-content">
@@ -244,7 +244,42 @@
           </div>
         </div>
       </section>
+
+      <!-- feedback-section  -->
+      <section id="feedback-section">
+        <h2 class="section-heading">
+          Give Us <span id="feedback-clr">Feedback</span>
+        </h2>
+        <p class="section-description feedback-description">
+          Let us know how we can improve your experience.
+        </p>
+        <textarea class="feedback-area" name="textarea" placeholder="Feedback Us"></textarea>
+        <button class="section-btn feedback-btn">Submit</button>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-icon-img">
+          <img src="./Images/Group 40071 (2).png" alt="" />
+          <h2 class="footer-title nav-heading">
+            Travel <span class="text-red">A-One</span>
+          </h2>
+        </div>
+
+        <p class="footer-description">
+          Lorem ipsum dolor sit amet consectetur. Nulla sit viverra morbi vitae
+          blandit orci potenti vulputate. Leo erat maecenas vitae elementum
+          ultricies nullam.
+        </p>
+        <div class="footer-icons">
+          <i class="footer-icon fa-brands fa-twitter"></i>
+          <i class="footer-icon fa-brands fa-facebook-f"></i>
+          <i class="footer-icon fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github footer-icon"></i>
+        </div>
+        <hr class="footer-horizoltal-line" />
+        <small class="footer-copyright">&copy;2017, All Rights Reserved.</small>
+      </div>
+    </footer>
   </body>
 </html>
