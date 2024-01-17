@@ -430,9 +430,9 @@ footer {
   .section-heading {
     font-size: 20px;
   }
-  section {
-    margin-bottom: 30px;
-}
+  section, #banner {
+    margin-bottom: 50px;
+  }
   .nav .nav-heading {
     color: #131318;
     font-size: 22px;
@@ -449,6 +449,10 @@ footer {
   .nav .nav-menu .nav-menu-items {
     display: none;
   }
+  #banner {
+    margin-top: 20px;
+    background-position: center;
+}
   .banner-title {
     font-size: 30px;
     margin-bottom: 16px;
@@ -556,7 +560,7 @@ footer {
     padding: 30px;
   }
   section, #banner {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .banner-form {
     flex-direction: column;
